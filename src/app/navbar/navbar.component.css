@@ -1,0 +1,58 @@
+
+  .sidebar {
+    transition: left 0.5s ease, top 0.5s ease; 
+  }
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+.bloc3{
+  display: flex;
+  justify-content: space-between;
+}
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .nav-list li {
+    margin-right: 20px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-list a:hover {
+    color: #ffcc00;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+
+  button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #27ae60;
+  }

@@ -1,0 +1,15 @@
+<!-- src/app/avatar/avatar.component.html -->
+<div class="container">
+    <img src="assets/image/avatar.png" alt="Avatar" width="250px" (click)="showPopup()">
+    <button class="button" (click)="showPopup()">+</button>
+  </div>
+  <div class="popup" id="imagePopup">
+    <span class="close" (click)="closePopup()">&times;</span>
+    <div class="image-row">
+      <label *ngFor="let image of images" class="image-radio">
+        <input type="radio" name="selectedImage" [(ngModel)]="selectedImage" [value]="image" />
+        <img [src]="image.src" alt="{{image.alt}}" width="150px">
+      </label>
+    </div>
+    <button class="validate-button" (click)="validateSelection()">Valider</button>
+  </div>

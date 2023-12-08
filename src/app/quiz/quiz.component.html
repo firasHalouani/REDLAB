@@ -1,0 +1,19 @@
+<!-- quiz.component.html -->
+<div style="background-color: burlywood; margin-left: 30%; padding: 10px; border-radius: 1%; border:  solid brown" >
+<div *ngFor="let question of questions; let i = index">
+  <h3>{{ question.question }}</h3>
+  <ul>
+    <li *ngFor="let option of question.options; let j = index">
+      <label>
+        <input type="radio" [(ngModel)]="userAnswers[i]" [value]="option" [name]="'group' + i"> {{ option }}
+      </label>
+    </li>
+  </ul>
+</div>
+
+<button (click)="submitQuiz()">Soumettre le quiz</button>
+
+<div class="result-container" *ngIf="score > 0">
+  <h2>Résultat: {{ score }}/{{ questions.length }}</h2>
+</div>
+</div>

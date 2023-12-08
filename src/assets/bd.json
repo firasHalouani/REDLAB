@@ -1,0 +1,21 @@
+[
+    {
+      "image": "assets/image/image0.jpg",
+      "date": "2023-12-08",
+      "description": "Discover our latest feature that will enhance your experience on our site.",
+      "buttonText": "plus de details"
+    },
+    {
+      "image": "assets/image/image1.jpg",
+      "date": "2023-12-09",
+      "description": "Explore important facts and information about our services and offerings.",
+      "buttonText": ""
+    },
+    {
+      "image": "assets/image/image3.jpg",
+      "date": "2023-12-10",
+      "description": "Learn how to distinguish between real news and fake news in our latest guide.",
+      "buttonText": ""
+    }
+  ]
+  

@@ -1,0 +1,44 @@
+<div [ngStyle]="sidebar" class="sidebar" >
+  <ul [ngStyle]="ul">
+    <app-avatar></app-avatar>
+    <li>
+      <a [ngStyle]="a" routerLink="/home" routerLinkActive="selected" [routerLinkActiveOptions]="{exact: true}">
+        <i class="fa-solid fa-house"></i>
+        <label [ngStyle]="label" > Accueil</label>
+      </a>
+    </li>
+    <li>
+      <a [ngStyle]="a" routerLink="/quiz" routerLinkActive="selected">
+        <i class="fa-regular fa-address-card"></i>
+        <label [ngStyle]="label"> Quiz</label>
+      </a>
+    </li>
+    <li>
+      <a [ngStyle]="a" routerLink="/services" routerLinkActive="selected">
+        <i class="fa-brands fa-servicestack"></i>
+        <label [ngStyle]="label"> Services</label>
+      </a>      
+    </li>
+    <li>
+      <a [ngStyle]="a" routerLink="/events" routerLinkActive="selected">
+        <i class="far fa-calendar-alt"></i>
+        <label [ngStyle]="label"> Evénements</label>
+      </a>
+    </li>    
+    <li>
+      <a [ngStyle]="a" routerLink="/contact" routerLinkActive="selected">
+        <i class="fa-solid fa-address-book"></i>
+        <label [ngStyle]="label"> Contact</label>
+      </a>
+    </li>
+    <li>
+      <a [ngStyle]="a" href="#">
+        <i class="fa-solid fa-sign-out-alt"></i> <!-- Use an appropriate logout icon -->
+        <label [ngStyle]="label"> Log Out</label>
+      </a>
+    </li>
+    <div id="particles-container">
+    </div>
+  </ul>
+
+</div>
