@@ -17,7 +17,12 @@ export class AppComponent {
     new Bloc(3, false),
   ];
   
-  
+  playsound(){
+    let audio = new Audio();
+    audio.src="../assets/Il chante la nature Incroyable !.mp3";
+    audio.load();
+    audio.play();
+  }
   title = 'REDLAB';
   sharedData!: any;
   test!: any;
