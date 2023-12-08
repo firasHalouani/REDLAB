@@ -29,16 +29,16 @@ export class QuizComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submitQuiz(): void {
-    this.score = 0;
-    for (let i = 0; i < this.questions.length; i++) {
-      const userAnswer = this.userAnswers[i];
-      const correctAnswer = this.questions[i].correctAnswer;
+    submitQuiz(): void {
+      this.score = 0;
+      for (let i = 0; i < this.questions.length; i++) {
+        const userAnswer = this.userAnswers[i];
+        const correctAnswer = this.questions[i].correctAnswer;
 
-      if (userAnswer && userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-        this.score++;
+        if (userAnswer && userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+          this.score++;
+        }
       }
     }
-  }
 
 }
